@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">Samuel Dev Jr.</a>
             </div>
             <nav id="nav">
                 <ul>
@@ -33,18 +34,19 @@
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
+        <video autoplay muted loop id="video-background">
+            <source src="img/Backgroud.mp4" type="video/mp4">
+            Tu navegador no soporta el video
+        </video>
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/WhatsApp Image 2024-11-22 at 3.29.04 PM.jpeg" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Samuel Perdomo</h1>
+            <h2>Estudiante de Ingeneria de Software</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://www.linkedin.com/in/samuel-alexander-perdomo-fajardo-3716052a9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SamuelPR21" target="_blank" ><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -53,7 +55,9 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Samuel A. Perdomo Fajardo.</span> Desarrollador Backend con experiencia en el diseño y desarrollo de APIs RESTful y gestión de bases de datos. Mi pasión por la innovación y la automatización me impulsa a crear soluciones escalables y eficientes. Busco un entorno desafiante donde pueda aplicar mis conocimientos en seguridad informática y contribuir a proyectos que tengan un impacto positivo en la sociedad.
+
+                Mis habilidades en liderazgo y gestión del tiempo me permiten trabajar de manera colaborativa y entregar resultados a tiempo. Estoy constantemente buscando oportunidades para aprender y crecer profesionalmente. </p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -61,35 +65,36 @@
                     <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
+                            <strong>Nacionalidad</strong>
+                            Colombiano 🇨🇴
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            2555 5454545
+                            <strong>Educacion</strong>
+                            Universidad Surcolombiana
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            samuelalexp21@gmail.com
                         </li>
-                        <li>
+                        <!---<li>
                             <strong>Website</strong>
                             www.example.com
-                        </li>
                         <li>
                             <strong>Dirección</strong>
                             123 San Luis, Argentina
                         </li>
+                        </li>-->
                         <li>
                             <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                               <span> FREELANCE </span>  y Estudiante Universitario 
+                    
                         </li>
                     </ul>
                 </div>
 
                 <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Hobbies</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
@@ -104,30 +109,30 @@
                             <span>VIAJAR</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
+                            <i class="fa-solid fa-basketball-ball"></i>
+                            <span>BALONCESTO</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>LEER</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
+                            <span>EDICION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hands-praying"></i>
+                            <span>MEDITACION</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="descargarCV">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
@@ -137,94 +142,54 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3>Habilidades Tecnicas</h3>
                     <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                        <span>Python</span>
                     </div>
                     <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
+                        <span>Kotlin</span>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
+                        <span>Java con Spring</span>
                     </div>
                     <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
-                            </div>
-                        </div>
+                        <span>React Native</span>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
-                            </div>
-                        </div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill">
+                        <span>Testing</span>
                     </div>
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
+                    <h3>Habilidades Blandas</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                        <span>Gestion Efectiva del Tiempo</span>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
+                        <span>Aprendizaje Online</span>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
+                        <span>Trabajo En Equipo</span>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span>Creacion de Habitos Saludables</span>
+                        <!--
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>65%</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -239,28 +204,19 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Ingeneria de Software</h4>
+                        <span class="casa">Universidad Surcolombaina</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>En formacion para ser un profesional emprendedor con profundo conocimiento de las ciencias y las tecnologías de la información y comunicación, con capacidad para crear y liderar proyectos de desarrollo de software, con criterios de calidad internaciona</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Bachiller Academcio</h4>
+                        <span class="casa">I.E.N Dante Alighieri</span>
+                        <span class="fecha"> 2021 </span>
+                        <p>Titulo de Bachiller Academico. Obtenido meritos  basicoa primaria y secundario junto con media vocacional</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -268,30 +224,49 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
+                    <h3>Formacion</h3>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Curso de Java SE Orientado a Objetos</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2023</span>
+                        <p>Apridazaje basico en un lenguaje ampliamente utilizado alrededor del mundo. Aplicando y dominando los conceptos de clases, objetos, herencia, abstracción, encapsulamiento y polimorfism</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Curso de Configuración de Entorno de Desarrollo en Linux</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2023</span>
+                        <p>Instalacion de Ubuntu, configuracion de herramientas web, usar VSCode, Node.js y GitHub en Linux</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Proyectos Personales</h3>
+                    <div class="item der">
+                        <h4>MultiPlatform Project Manager</h4>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p>Plataforma de gestión de proyectos multiplataforma desarrollada con Kotlin, Spring Boot, Docker y ReactNative. Diseñada para una empresa de maquinaria amarilla, la aplicación ofrece funcionalidades completas para la planificación, seguimiento y colaboración en proyectos, facilitando una gestión eficiente entre equipos.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Analisis de Violencia Domestica en Colombia</h4>
+                        <span class="fecha">2024</span>
+                        <p>royecto de análisis de datos enfocado en la violencia doméstica en Colombia. Incluye la recopilación, limpieza y análisis de datos, proporcionando insights clave sobre la evolución de este fenómeno para apoyar investigaciones y posibles intervenciones sociales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Conectando Mentores</h4>
+                        <span class="fecha">2023</span>
+                        <p>Aplicación web construida en Java con Spring Boot y JWT para la carga y descarga segura de documentos. Facilita el intercambio de conocimientos mediante archivos entre estudiantes y docentes dentro de la comunidad universitaria, promoviendo un entorno colaborativo de aprendizaje</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -307,57 +282,45 @@
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
+                    <img src="img/mentores.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Conectando Mentores</h3>
+                        <p>Aplicación web construida en Java con Spring Boot y JWT para la carga y descarga segura de documentos</p>
+                        <br>
+                        <a href="https://github.com/SamuelPR21/Conectando_Mentores" target="_blank" ><p>Ver Proyecto</p></i></a>
+                        
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
+                    <img src="img/multi.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>MultiPlatform Project Manager</h3>
+                        <p>Plataforma de gestión de proyectos multiplataforma desarrollada con Kotlin, Spring Boot, Docker y ReactNative</p>
+                        <a href="https://github.com/SamuelPR21/-MultiPlatformProjectManager-front-" target="_blank" ><p>Front-End</p></i></a>
+                        <a href="https://github.com/SamuelPR21/MultiPlatformProjectManager" target="_blank" ><p>Front-End</p></i></a>
+
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
+                    <img src="img/anaCOl.jpeg" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Analisis de Violencia Domestica en Colombia</h3>
+                        <p>Proyecto de análisis de datos enfocado en la violencia doméstica en Colombia. Incluye la recopilación, limpieza y análisis de datos, proporcionando insights </p>
+                        <a href="https://github.com/SamuelPR21/Analisis-Violencia-Domestica-Colombia" target="_blank" ><p>Ver Proyecto</p></i></a>
+
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- SECCION CONTACTO -->
+    <!-- SECCION CONTACTO 
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
             <div class="fila">
-                <!-- Formulario -->
+                 Formulario 
                 <div class="col">
                     <input type="text" placeholder="Tú Nombre">
                     <input type="text" placeholder="Número telefónico">
@@ -369,7 +332,7 @@
                         <span class="overlay"></span>
                     </button>
                 </div>
-                <!-- Mapa -->
+                 Mapa 
                 <div class="col">
                     <img src="img/ubicacion.png" alt="">
                     <div class="info">
@@ -391,7 +354,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+        
 
     <!-- footer -->
     <footer>
@@ -399,11 +363,8 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-alexander-perdomo-fajardo-3716052a9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SamuelPR21" target="_blank" ><i class="fab fa-github"></i></a>
         </div>
     </footer>
 

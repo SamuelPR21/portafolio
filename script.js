@@ -39,3 +39,10 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+//descargar curriculum
+const botonDescargar = document.getElementById("descargarCV");
+botonDescargar.addEventListener('click', (event) => {
+    event.preventDefault(); // Previene la acción por defecto del botón
+    window.location.href = 'https://drive.google.com/uc?export=download&id=1PMpCo2ZodD1sx4OoswKlRntShP4q9x7m'; // Redirige a la URL de descarga
+});
